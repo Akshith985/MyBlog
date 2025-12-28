@@ -1,16 +1,27 @@
 ---
-title: 'First post'
+title: 'When I Created Something Unique'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+pubDate: 'Dec 20 2025'
+heroImage: '../../assets/Framework.java.png'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+The Black Box Problem: Why Did I Build a Web Framework From the Socket Up?
+Modern software development is built on layers of abstraction. We use frameworks that handle everything from dependency injection to request routing with a single @Annotation. It’s efficient, but it’s also dangerous. We’ve become "Library Glue Developers"—experts at connecting black boxes without actually knowing what’s happening inside them.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+I reached a point where "it just works" wasn't a good enough answer for me. I wanted to see the grain of the wood.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+I didn't build a Java framework to compete with Spring Boot; I built it to audit my own understanding of the HTTP protocol. By stripping away the bloat of traditional enterprise frameworks—specifically the heavy, opinionated nature of tools like Angular on the frontend—I forced myself back to the primitives.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+What I realized is that 90% of what we call "magic" in development is just well-hidden complexity. When you write your own routing engine using Regex, or handle a raw HttpExchange context, you stop seeing "features" and start seeing "flow." You realize that a framework is just a set of opinions on how data should move through a socket.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Therefoe, Building from scratch taught me three things that using a framework never could:
+
+Performance is Transparency: You can’t optimize what you can't see. When you own the code, "memory leaks" aren't mysteries; they are visible mistakes in your own logic.
+
+The Power of Minimalism: Most projects don't need a 50MB runtime to serve a JSON object. We've traded simplicity for the "safety" of heavy abstractions, often at the cost of speed and cold-start times.
+
+Control over "Magic": I now view frameworks as a choice, not a necessity. I can use them more effectively because I know exactly which "black box" they are replacing.
+
+My Blog isn't for tutorials or "How-To" guides. It’s a log of my own technical synthesis—pulling apart the systems we take for granted to see how they tick. 
+
+I’m Akshith, and I’m interested in the code that exists before the framework starts.
